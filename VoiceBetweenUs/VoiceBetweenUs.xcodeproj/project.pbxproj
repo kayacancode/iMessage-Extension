@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02189C511F659A1D007FF97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02189C501F659A1D007FF97B /* AppDelegate.swift */; };
+		02189C531F659A1D007FF97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02189C521F659A1D007FF97B /* ViewController.swift */; };
+		02189C561F659A1D007FF97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02189C541F659A1D007FF97B /* Main.storyboard */; };
+		02189C581F659A1D007FF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02189C571F659A1D007FF97B /* Assets.xcassets */; };
+		02189C5B1F659A1D007FF97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02189C591F659A1D007FF97B /* LaunchScreen.storyboard */; };
+		02189C6C1F659C94007FF97B /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02189C6B1F659C94007FF97B /* Messages.framework */; };
+		02189C6F1F659C94007FF97B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02189C6E1F659C94007FF97B /* MessagesViewController.swift */; };
+		02189C721F659C94007FF97B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02189C701F659C94007FF97B /* MainInterface.storyboard */; };
+		02189C741F659C94007FF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02189C731F659C94007FF97B /* Assets.xcassets */; };
+		02189C781F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02189C691F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02189C821F659D65007FF97B /* ic_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 02189C7E1F659D65007FF97B /* ic_play.png */; };
+		02189C831F659D65007FF97B /* ic_upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 02189C7F1F659D65007FF97B /* ic_upload.png */; };
+		02189C841F659D65007FF97B /* thumbnail-idris.png in Resources */ = {isa = PBXBuildFile; fileRef = 02189C801F659D65007FF97B /* thumbnail-idris.png */; };
+		02189C851F659D65007FF97B /* top-header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02189C811F659D65007FF97B /* top-header.jpg */; };
+		02189C881F659D76007FF97B /* video0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02189C871F659D76007FF97B /* video0.mp4 */; };
+		02189C8B1F659FFD007FF97B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02189C891F659FFD007FF97B /* VideoCollectionViewCell.swift */; };
+		02189C8C1F659FFE007FF97B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02189C8A1F659FFD007FF97B /* VideoCollectionViewCell.xib */; };
+		027852DF1F65ED42003F59EF /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C21F65ED42003F59EF /* video1.mp4 */; };
+		027852E01F65ED42003F59EF /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C31F65ED42003F59EF /* video2.mp4 */; };
+		027852E11F65ED42003F59EF /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C41F65ED42003F59EF /* video3.mp4 */; };
+		027852E21F65ED42003F59EF /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C51F65ED42003F59EF /* video4.mp4 */; };
+		027852E31F65ED42003F59EF /* video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C61F65ED42003F59EF /* video5.mp4 */; };
+		027852E41F65ED42003F59EF /* video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C71F65ED42003F59EF /* video6.mp4 */; };
+		027852E51F65ED42003F59EF /* video7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C81F65ED42003F59EF /* video7.mp4 */; };
+		027852E61F65ED42003F59EF /* video8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852C91F65ED42003F59EF /* video8.mp4 */; };
+		027852E71F65ED42003F59EF /* video9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852CA1F65ED42003F59EF /* video9.mp4 */; };
+		027852E81F65ED42003F59EF /* video10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852CB1F65ED42003F59EF /* video10.mp4 */; };
+		027852E91F65ED42003F59EF /* video11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852CC1F65ED42003F59EF /* video11.mp4 */; };
+		027852EA1F65ED42003F59EF /* video12.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852CD1F65ED42003F59EF /* video12.mp4 */; };
+		027852EB1F65ED42003F59EF /* video13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027852CE1F65ED42003F59EF /* video13.mp4 */; };
+		02A39AFD1F75854E00733813 /* introduce.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02A39AFC1F75854E00733813 /* introduce.gif */; };
+		02A39B021F7585EB00733813 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A39B011F7585EB00733813 /* UIImage+animatedGIF.m */; };
+		4C153E26B1C00DED2B98EA5C /* Pods_VoiceBetweenUs_Presented_By_Snatched.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22CC2D60822498E0C383072 /* Pods_VoiceBetweenUs_Presented_By_Snatched.framework */; };
+		68E723708AF309AEDBCA698B /* Pods_VoiceBetweenUs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29E62F4CAF0478AED598CE /* Pods_VoiceBetweenUs.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02189C761F659C94007FF97B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02189C451F659A1D007FF97B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02189C681F659C94007FF97B;
+			remoteInfo = "VoiceBetweenUs Presented By Snatched";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02189C7C1F659C94007FF97B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02189C781F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02189C4D1F659A1D007FF97B /* VoiceBetweenUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceBetweenUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02189C501F659A1D007FF97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02189C521F659A1D007FF97B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02189C551F659A1D007FF97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02189C571F659A1D007FF97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02189C5A1F659A1D007FF97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02189C5C1F659A1D007FF97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02189C691F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VoiceBetweenUs Presented By Snatched.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02189C6B1F659C94007FF97B /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		02189C6E1F659C94007FF97B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		02189C711F659C94007FF97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		02189C731F659C94007FF97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02189C751F659C94007FF97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02189C7E1F659D65007FF97B /* ic_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_play.png; path = Resources/ic_play.png; sourceTree = "<group>"; };
+		02189C7F1F659D65007FF97B /* ic_upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_upload.png; path = Resources/ic_upload.png; sourceTree = "<group>"; };
+		02189C801F659D65007FF97B /* thumbnail-idris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail-idris.png"; path = "Resources/thumbnail-idris.png"; sourceTree = "<group>"; };
+		02189C811F659D65007FF97B /* top-header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "top-header.jpg"; path = "Resources/top-header.jpg"; sourceTree = "<group>"; };
+		02189C871F659D76007FF97B /* video0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video0.mp4; path = Resources/Videos/video0.mp4; sourceTree = "<group>"; };
+		02189C891F659FFD007FF97B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		02189C8A1F659FFD007FF97B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		027852C21F65ED42003F59EF /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = Resources/Videos/video1.mp4; sourceTree = "<group>"; };
+		027852C31F65ED42003F59EF /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = Resources/Videos/video2.mp4; sourceTree = "<group>"; };
+		027852C41F65ED42003F59EF /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video3.mp4; path = Resources/Videos/video3.mp4; sourceTree = "<group>"; };
+		027852C51F65ED42003F59EF /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video4.mp4; path = Resources/Videos/video4.mp4; sourceTree = "<group>"; };
+		027852C61F65ED42003F59EF /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video5.mp4; path = Resources/Videos/video5.mp4; sourceTree = "<group>"; };
+		027852C71F65ED42003F59EF /* video6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video6.mp4; path = Resources/Videos/video6.mp4; sourceTree = "<group>"; };
+		027852C81F65ED42003F59EF /* video7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video7.mp4; path = Resources/Videos/video7.mp4; sourceTree = "<group>"; };
+		027852C91F65ED42003F59EF /* video8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video8.mp4; path = Resources/Videos/video8.mp4; sourceTree = "<group>"; };
+		027852CA1F65ED42003F59EF /* video9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video9.mp4; path = Resources/Videos/video9.mp4; sourceTree = "<group>"; };
+		027852CB1F65ED42003F59EF /* video10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video10.mp4; path = Resources/Videos/video10.mp4; sourceTree = "<group>"; };
+		027852CC1F65ED42003F59EF /* video11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video11.mp4; path = Resources/Videos/video11.mp4; sourceTree = "<group>"; };
+		027852CD1F65ED42003F59EF /* video12.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video12.mp4; path = Resources/Videos/video12.mp4; sourceTree = "<group>"; };
+		027852CE1F65ED42003F59EF /* video13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video13.mp4; path = Resources/Videos/video13.mp4; sourceTree = "<group>"; };
+		02A39AFC1F75854E00733813 /* introduce.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = introduce.gif; path = Resource/introduce.gif; sourceTree = "<group>"; };
+		02A39AFF1F7585EA00733813 /* VoiceBetweenUs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceBetweenUs-Bridging-Header.h"; sourceTree = "<group>"; };
+		02A39B001F7585EB00733813 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "Custom/UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		02A39B011F7585EB00733813 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "Custom/UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		5155AD2E5D0EC772E8BEA32C /* Pods-VoiceBetweenUs Presented By Snatched.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceBetweenUs Presented By Snatched.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceBetweenUs Presented By Snatched/Pods-VoiceBetweenUs Presented By Snatched.release.xcconfig"; sourceTree = "<group>"; };
+		5C29E62F4CAF0478AED598CE /* Pods_VoiceBetweenUs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceBetweenUs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8686A944E9BAE326F358D5 /* Pods-VoiceBetweenUs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceBetweenUs.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceBetweenUs/Pods-VoiceBetweenUs.release.xcconfig"; sourceTree = "<group>"; };
+		93DCE31263EB92C673F8687C /* Pods-VoiceBetweenUs Presented By Snatched.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceBetweenUs Presented By Snatched.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceBetweenUs Presented By Snatched/Pods-VoiceBetweenUs Presented By Snatched.debug.xcconfig"; sourceTree = "<group>"; };
+		D524F08C1B38337780F6C654 /* Pods-VoiceBetweenUs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceBetweenUs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceBetweenUs/Pods-VoiceBetweenUs.debug.xcconfig"; sourceTree = "<group>"; };
+		F22CC2D60822498E0C383072 /* Pods_VoiceBetweenUs_Presented_By_Snatched.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceBetweenUs_Presented_By_Snatched.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02189C4A1F659A1D007FF97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E723708AF309AEDBCA698B /* Pods_VoiceBetweenUs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02189C661F659C94007FF97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02189C6C1F659C94007FF97B /* Messages.framework in Frameworks */,
+				4C153E26B1C00DED2B98EA5C /* Pods_VoiceBetweenUs_Presented_By_Snatched.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02189C441F659A1D007FF97B = {
+			isa = PBXGroup;
+			children = (
+				02189C4F1F659A1D007FF97B /* VoiceBetweenUs */,
+				02189C6D1F659C94007FF97B /* VoiceBetweenUs Presented By Snatched */,
+				02189C6A1F659C94007FF97B /* Frameworks */,
+				02189C4E1F659A1D007FF97B /* Products */,
+				8A33AB37A503338C1AF7D994 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		02189C4E1F659A1D007FF97B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02189C4D1F659A1D007FF97B /* VoiceBetweenUs.app */,
+				02189C691F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02189C4F1F659A1D007FF97B /* VoiceBetweenUs */ = {
+			isa = PBXGroup;
+			children = (
+				02A39AFE1F7585E000733813 /* Custom */,
+				02189C621F659A7B007FF97B /* Resource */,
+				02189C501F659A1D007FF97B /* AppDelegate.swift */,
+				02189C521F659A1D007FF97B /* ViewController.swift */,
+				02189C541F659A1D007FF97B /* Main.storyboard */,
+				02189C571F659A1D007FF97B /* Assets.xcassets */,
+				02189C591F659A1D007FF97B /* LaunchScreen.storyboard */,
+				02189C5C1F659A1D007FF97B /* Info.plist */,
+			);
+			path = VoiceBetweenUs;
+			sourceTree = "<group>";
+		};
+		02189C621F659A7B007FF97B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				02A39AFC1F75854E00733813 /* introduce.gif */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		02189C6A1F659C94007FF97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02189C6B1F659C94007FF97B /* Messages.framework */,
+				5C29E62F4CAF0478AED598CE /* Pods_VoiceBetweenUs.framework */,
+				F22CC2D60822498E0C383072 /* Pods_VoiceBetweenUs_Presented_By_Snatched.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02189C6D1F659C94007FF97B /* VoiceBetweenUs Presented By Snatched */ = {
+			isa = PBXGroup;
+			children = (
+				02189C7D1F659D55007FF97B /* Resources */,
+				02189C6E1F659C94007FF97B /* MessagesViewController.swift */,
+				02189C701F659C94007FF97B /* MainInterface.storyboard */,
+				02189C731F659C94007FF97B /* Assets.xcassets */,
+				02189C751F659C94007FF97B /* Info.plist */,
+				02189C891F659FFD007FF97B /* VideoCollectionViewCell.swift */,
+				02189C8A1F659FFD007FF97B /* VideoCollectionViewCell.xib */,
+			);
+			path = "VoiceBetweenUs Presented By Snatched";
+			sourceTree = "<group>";
+		};
+		02189C7D1F659D55007FF97B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02189C861F659D6F007FF97B /* Videos */,
+				02189C7E1F659D65007FF97B /* ic_play.png */,
+				02189C7F1F659D65007FF97B /* ic_upload.png */,
+				02189C801F659D65007FF97B /* thumbnail-idris.png */,
+				02189C811F659D65007FF97B /* top-header.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		02189C861F659D6F007FF97B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				027852C21F65ED42003F59EF /* video1.mp4 */,
+				027852C31F65ED42003F59EF /* video2.mp4 */,
+				027852C41F65ED42003F59EF /* video3.mp4 */,
+				027852C51F65ED42003F59EF /* video4.mp4 */,
+				027852C61F65ED42003F59EF /* video5.mp4 */,
+				027852C71F65ED42003F59EF /* video6.mp4 */,
+				027852C81F65ED42003F59EF /* video7.mp4 */,
+				027852C91F65ED42003F59EF /* video8.mp4 */,
+				027852CA1F65ED42003F59EF /* video9.mp4 */,
+				027852CB1F65ED42003F59EF /* video10.mp4 */,
+				027852CC1F65ED42003F59EF /* video11.mp4 */,
+				027852CD1F65ED42003F59EF /* video12.mp4 */,
+				027852CE1F65ED42003F59EF /* video13.mp4 */,
+				02189C871F659D76007FF97B /* video0.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		02A39AFE1F7585E000733813 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				02A39B001F7585EB00733813 /* UIImage+animatedGIF.h */,
+				02A39B011F7585EB00733813 /* UIImage+animatedGIF.m */,
+				02A39AFF1F7585EA00733813 /* VoiceBetweenUs-Bridging-Header.h */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		8A33AB37A503338C1AF7D994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D524F08C1B38337780F6C654 /* Pods-VoiceBetweenUs.debug.xcconfig */,
+				6D8686A944E9BAE326F358D5 /* Pods-VoiceBetweenUs.release.xcconfig */,
+				93DCE31263EB92C673F8687C /* Pods-VoiceBetweenUs Presented By Snatched.debug.xcconfig */,
+				5155AD2E5D0EC772E8BEA32C /* Pods-VoiceBetweenUs Presented By Snatched.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02189C4C1F659A1D007FF97B /* VoiceBetweenUs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02189C5F1F659A1D007FF97B /* Build configuration list for PBXNativeTarget "VoiceBetweenUs" */;
+			buildPhases = (
+				EB8A058CABB993C7D57E3A4A /* [CP] Check Pods Manifest.lock */,
+				02189C491F659A1D007FF97B /* Sources */,
+				02189C4A1F659A1D007FF97B /* Frameworks */,
+				02189C4B1F659A1D007FF97B /* Resources */,
+				02189C7C1F659C94007FF97B /* Embed App Extensions */,
+				5F93B15804EEE57D58B4595D /* [CP] Embed Pods Frameworks */,
+				83FAC65AB6B24E5E61D3573D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02189C771F659C94007FF97B /* PBXTargetDependency */,
+			);
+			name = VoiceBetweenUs;
+			productName = VoiceBetweenUs;
+			productReference = 02189C4D1F659A1D007FF97B /* VoiceBetweenUs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02189C681F659C94007FF97B /* VoiceBetweenUs Presented By Snatched */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02189C791F659C94007FF97B /* Build configuration list for PBXNativeTarget "VoiceBetweenUs Presented By Snatched" */;
+			buildPhases = (
+				4B7DB45301FEF067073AE8EB /* [CP] Check Pods Manifest.lock */,
+				02189C651F659C94007FF97B /* Sources */,
+				02189C661F659C94007FF97B /* Frameworks */,
+				02189C671F659C94007FF97B /* Resources */,
+				DB32F3D5B4F4F6CDE4D16EE1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VoiceBetweenUs Presented By Snatched";
+			productName = "VoiceBetweenUs Presented By Snatched";
+			productReference = 02189C691F659C94007FF97B /* VoiceBetweenUs Presented By Snatched.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02189C451F659A1D007FF97B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = C;
+				TargetAttributes = {
+					02189C4C1F659A1D007FF97B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PZGE2RV3T8;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					02189C681F659C94007FF97B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PZGE2RV3T8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 02189C481F659A1D007FF97B /* Build configuration list for PBXProject "VoiceBetweenUs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02189C441F659A1D007FF97B;
+			productRefGroup = 02189C4E1F659A1D007FF97B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02189C4C1F659A1D007FF97B /* VoiceBetweenUs */,
+				02189C681F659C94007FF97B /* VoiceBetweenUs Presented By Snatched */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02189C4B1F659A1D007FF97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02189C5B1F659A1D007FF97B /* LaunchScreen.storyboard in Resources */,
+				02189C581F659A1D007FF97B /* Assets.xcassets in Resources */,
+				02A39AFD1F75854E00733813 /* introduce.gif in Resources */,
+				02189C561F659A1D007FF97B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02189C671F659C94007FF97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027852EA1F65ED42003F59EF /* video12.mp4 in Resources */,
+				027852E21F65ED42003F59EF /* video4.mp4 in Resources */,
+				027852E91F65ED42003F59EF /* video11.mp4 in Resources */,
+				027852E11F65ED42003F59EF /* video3.mp4 in Resources */,
+				027852DF1F65ED42003F59EF /* video1.mp4 in Resources */,
+				027852E51F65ED42003F59EF /* video7.mp4 in Resources */,
+				02189C841F659D65007FF97B /* thumbnail-idris.png in Resources */,
+				02189C831F659D65007FF97B /* ic_upload.png in Resources */,
+				02189C8C1F659FFE007FF97B /* VideoCollectionViewCell.xib in Resources */,
+				027852E31F65ED42003F59EF /* video5.mp4 in Resources */,
+				027852E61F65ED42003F59EF /* video8.mp4 in Resources */,
+				02189C881F659D76007FF97B /* video0.mp4 in Resources */,
+				02189C741F659C94007FF97B /* Assets.xcassets in Resources */,
+				02189C821F659D65007FF97B /* ic_play.png in Resources */,
+				027852EB1F65ED42003F59EF /* video13.mp4 in Resources */,
+				027852E41F65ED42003F59EF /* video6.mp4 in Resources */,
+				02189C851F659D65007FF97B /* top-header.jpg in Resources */,
+				027852E81F65ED42003F59EF /* video10.mp4 in Resources */,
+				027852E01F65ED42003F59EF /* video2.mp4 in Resources */,
+				02189C721F659C94007FF97B /* MainInterface.storyboard in Resources */,
+				027852E71F65ED42003F59EF /* video9.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B7DB45301FEF067073AE8EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceBetweenUs Presented By Snatched-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F93B15804EEE57D58B4595D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VoiceBetweenUs/Pods-VoiceBetweenUs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceBetweenUs/Pods-VoiceBetweenUs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83FAC65AB6B24E5E61D3573D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceBetweenUs/Pods-VoiceBetweenUs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB32F3D5B4F4F6CDE4D16EE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceBetweenUs Presented By Snatched/Pods-VoiceBetweenUs Presented By Snatched-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB8A058CABB993C7D57E3A4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceBetweenUs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02189C491F659A1D007FF97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02189C531F659A1D007FF97B /* ViewController.swift in Sources */,
+				02A39B021F7585EB00733813 /* UIImage+animatedGIF.m in Sources */,
+				02189C511F659A1D007FF97B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02189C651F659C94007FF97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02189C8B1F659FFD007FF97B /* VideoCollectionViewCell.swift in Sources */,
+				02189C6F1F659C94007FF97B /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02189C771F659C94007FF97B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02189C681F659C94007FF97B /* VoiceBetweenUs Presented By Snatched */;
+			targetProxy = 02189C761F659C94007FF97B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02189C541F659A1D007FF97B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02189C551F659A1D007FF97B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02189C591F659A1D007FF97B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02189C5A1F659A1D007FF97B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		02189C701F659C94007FF97B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02189C711F659C94007FF97B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02189C5D1F659A1D007FF97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02189C5E1F659A1D007FF97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02189C601F659A1D007FF97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D524F08C1B38337780F6C654 /* Pods-VoiceBetweenUs.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PZGE2RV3T8;
+				INFOPLIST_FILE = VoiceBetweenUs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxtheatrical.mountainbetweenmessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceBetweenUs/VoiceBetweenUs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		02189C611F659A1D007FF97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8686A944E9BAE326F358D5 /* Pods-VoiceBetweenUs.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PZGE2RV3T8;
+				INFOPLIST_FILE = VoiceBetweenUs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxtheatrical.mountainbetweenmessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceBetweenUs/VoiceBetweenUs-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		02189C7A1F659C94007FF97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93DCE31263EB92C673F8687C /* Pods-VoiceBetweenUs Presented By Snatched.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = PZGE2RV3T8;
+				INFOPLIST_FILE = "VoiceBetweenUs Presented By Snatched/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxtheatrical.mountainbetweenmessage.imessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		02189C7B1F659C94007FF97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5155AD2E5D0EC772E8BEA32C /* Pods-VoiceBetweenUs Presented By Snatched.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = PZGE2RV3T8;
+				INFOPLIST_FILE = "VoiceBetweenUs Presented By Snatched/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxtheatrical.mountainbetweenmessage.imessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02189C481F659A1D007FF97B /* Build configuration list for PBXProject "VoiceBetweenUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02189C5D1F659A1D007FF97B /* Debug */,
+				02189C5E1F659A1D007FF97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02189C5F1F659A1D007FF97B /* Build configuration list for PBXNativeTarget "VoiceBetweenUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02189C601F659A1D007FF97B /* Debug */,
+				02189C611F659A1D007FF97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02189C791F659C94007FF97B /* Build configuration list for PBXNativeTarget "VoiceBetweenUs Presented By Snatched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02189C7A1F659C94007FF97B /* Debug */,
+				02189C7B1F659C94007FF97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02189C451F659A1D007FF97B /* Project object */;
+}
